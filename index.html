@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SALMAN NAZEER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+     Remove the navbar's default margin-bottom and rounded borders 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+     Add a gray background color and some padding to the footer 
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+    .carousel-inner img {
+      width: 100%; Set width to 100% 
+      margin: auto;
+      min-height:100px;
+  }
+  BODY{
+    color: whitesmoke;
+    background-color: rgb(2, 2, 2);/
+  }
+
+  Hide the carousel text when the screen is less than 600 pixels wide
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  .multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    } */
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }=
+  } .carouse-control{
+    &.left, &.right{
+
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" ><img src="img/SALMAN.png" height="30px" alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="concert.html">concert</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=salman+nazeer" target="_blank">youtube</a></li>
+        <li><a href="#raza">Contact</a></li>
+    
+       
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" style="background-color: black;">
+      <div class="item active">
+        <img src="img/BG3.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>SALMAN NAZEER</h3>
+    
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="img/pic3.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>SALMAN NAZEER</h3>
+        
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+<MAIN>
+<div class="container text-center">    
+  <h3>RAPPER</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="img/pic2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>SALMAN</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="img/PIC13.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>NAZEER</p>    
+    </div>
+    <div class="col-sm-4">
+      <div class="well" style="color: #f2f2f2; background-color: black;">
+       <p>EK DO TEEN MERI NAHI KOI TEAM | MAI REHTA AKSAR GHUM SUM | DHUN KO TU SUN | SHAKA LAKA BOOM BOOM | KOI NAHI HUMDUM | SHIRT MAINA PEHNI POLO HAATH MAI HAI RADO | MAI PHAINKUN AUDIO | DOST BOLIEN VIDEO </p>
+      </div>
+      <div class="well" style="color: #f2f2f2; background-color: rgb(5, 5, 5);">
+        
+       <p> SOCH MAI BETHA TOH LIKHA MAINA GAANA | GAANAY KO PHIR MAINA IS BEAT PER UTARA | YAADON KO TERI APNA DIL SE NIKALA | BHOOL NAHI PATA WOH BIETA ZAMANA | FARYAD TERI DIL MAI REHTI THI BAAKI</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+
+    <div class="container">
+        <h1>SUBSCRIBE YOUTUBE CHANNEL FOR MORE UPTADE</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="col-xs-4" style=": 300px;"><a href="#1"><img src="img/pic2.jpg" height="300px" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" style="height: 300px;"><a href="#1"><img src="img/pic12.jpg" height="300px" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" style="height: 300px;"><a href="#1"><img src="img/pic3.jpg" height="300px"  class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" style="height: 300px;"><a href="#1"><img src="img/pic13.jpg"  height="300px"class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" style="height: 300px;"><a href="#1"><img src="img/pic3.jpg" height="300px" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                  <div class="col-xs-4" style="height: 300px;"><a href="#1"><img src="img/mid1.jpg"  class="img-responsive"></a></div>
+                </div>
+                <!-- add  more items here -->
+                <!-- Example item start:  -->
+                
+                <div class="item">
+                  <div class="col-xs-4"><a href="#1"><img src="img/pic3.jpg" class="img-responsive"></a></div>
+                </div>
+                
+                <!--  Example item end -->
+              </div>
+              <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </MAIN>
+
+  <footer class="container-fluid text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+
+
+    <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container" id="raza">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="#"><img class="img/logo-retina-inverse-280x74" src="img/SALMAN.png" alt="" height="100PX" ></a>
+                <p>if you want any inquiry contact me in below social media accounts</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">copyright</span><span> </span><span>2023</span><span>. </span><span></span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h2>Contact details</h2>
+             
+              <dl class="contact-list">
+                <dt>E-mail:Salmannazeer387@gmail.com</dt>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd>0304-2898096
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="https://www.youtube.com/results?search_query=salman+nazeer" target="_blank">youtube</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="https://www.facebook.com/Salmannazeer387gmailcom" target="_blank"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="https://www.instagram.com/salmannazeer4716/"target="_blank" ><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+        
+        </div>
+      </footer>
+
+
+
+
+</footer>
+<script>
+// Instantiate the Bootstrap carousel
+$('.multi-item-carousel').carousel({
+  interval: false
+});
+
+// for every slide in carousel, copy the next slide's item in the slide.
+// Do the same for the next, next item.
+$('.multi-item-carousel .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+  
+  if (next.next().length>0) {
+    next.next().children(':first-child').clone().appendTo($(this));
+  } else {
+  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
+</body>
+</html> 
